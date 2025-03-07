@@ -1,0 +1,42 @@
+/* Tab styles */
+.tab-container {
+  max-width: 1200px;
+  margin: 1rem auto 0;
+  padding: 0 1rem;
+}
+
+.tabs {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 0;
+  border-bottom: 2px solid var(--liverpool-red);
+}
+
+.tab-btn {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  background-color: #e0e0e0;
+  color: var(--dark-gray);
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 5px 5px 0 0;
+  transition: all 0.2s ease;
+}
+
+.tab-btn:hover {
+  background-color: #d0d0d0;
+}
+
+.tab-btn.active {
+  background-color: var(--liverpool-red);
+  color: var(--white);
+}
+
+.tab-content {
+  display: none;
+  width: 100%;
+}
+
+.tab-content.active {
+  display: block;
+} 
